@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :countries
-  root "home#uecountries"
+  root "uecountries#home"
 
   get '/uecountries' => 'uecountries#index'
 end
