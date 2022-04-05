@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :countries
-  root "home#quiz"
+  root "home#uecountries"
 
-  get '/quiz' => 'quiz#index'
+  get '/uecountries' => 'uecountries#index'
 end
