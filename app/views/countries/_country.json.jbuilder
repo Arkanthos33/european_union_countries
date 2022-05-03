@@ -1,2 +1,2 @@
-json.extract! country, :id, :name, :flag, :created_at, :updated_at
+json.extract! country, :id, :name, :capital, :population, :flag, :created_at, :updated_at
 json.url country_url(country, format: :json)

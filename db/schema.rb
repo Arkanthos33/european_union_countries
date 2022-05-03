@@ -17,6 +17,8 @@ ActiveRecord::Schema.define(version: 2022_04_05_083850) do
 
   create_table "countries", force: :cascade do |t|
     t.string "name"
+    t.string "capital"
+    t.string "population"
     t.text "flag"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
