@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Countryinformations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Capital</th>
+      <th>Population</th>
+      <th>Formeetat</th>
+      <th>Langueoficiel</th>
+      <th>Flag</th>
+      <th>Espaceschengen</th>
+      <th>Zoneeuro</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @countryinformations.each do |countryinformation| %>
+      <tr>
+        <td><%= countryinformation.name %></td>
+        <td><%= countryinformation.capital %></td>
+        <td><%= countryinformation.population %></td>
+        <td><%= countryinformation.formeetat %></td>
+        <td><%= countryinformation.langueoficiel %></td>
+        <td><%= countryinformation.flag %></td>
+        <td><%= countryinformation.espaceschengen %></td>
+        <td><%= countryinformation.zoneeuro %></td>
+        <td><%= link_to 'Show', countryinformation %></td>
+        <td><%= link_to 'Edit', edit_countryinformation_path(countryinformation) %></td>
+        <td><%= link_to 'Destroy', countryinformation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Countryinformation', new_countryinformation_path %>

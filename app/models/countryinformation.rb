@@ -1,0 +1,2 @@
+class Countryinformation < ApplicationRecord
+end

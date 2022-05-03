@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @countryinformation.name %>
+</p>
+
+<p>
+  <strong>Capital:</strong>
+  <%= @countryinformation.capital %>
+</p>
+
+<p>
+  <strong>Population:</strong>
+  <%= @countryinformation.population %>
+</p>
+
+<p>
+  <strong>Formeetat:</strong>
+  <%= @countryinformation.formeetat %>
+</p>
+
+<p>
+  <strong>Langueoficiel:</strong>
+  <%= @countryinformation.langueoficiel %>
+</p>
+
+<p>
+  <strong>Flag:</strong>
+  <%= @countryinformation.flag %>
+</p>
+
+<p>
+  <strong>Espaceschengen:</strong>
+  <%= @countryinformation.espaceschengen %>
+</p>
+
+<p>
+  <strong>Zoneeuro:</strong>
+  <%= @countryinformation.zoneeuro %>
+</p>
+
+<%= link_to 'Edit', edit_countryinformation_path(@countryinformation) %> |
+<%= link_to 'Back', countryinformations_path %>
